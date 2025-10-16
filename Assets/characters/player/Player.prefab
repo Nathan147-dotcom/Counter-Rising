@@ -135,6 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   walkSpeed: 5
+  _isMoving: 0
+  _isRunning: 0
 --- !u!114 &545512217099821031
 MonoBehaviour:
   m_ObjectHideFlags: 0
