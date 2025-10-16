@@ -232,7 +232,7 @@ Camera:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -521,8 +521,8 @@ Transform:
   m_GameObject: {fileID: 730749230}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0197, y: 0.1204, z: 0}
-  m_LocalScale: {x: 2.4564602, y: 2.1146784, z: 1}
+  m_LocalPosition: {x: 25.3387, y: 0.533, z: 0}
+  m_LocalScale: {x: 2.4491184, y: 3.1829624, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 319535853}
@@ -574,12 +574,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -409987595238654708, guid: f0dc95b642bcb4240ad7a8f11c988b56, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 544358b8e19c78045a3cba76bb127179, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 50, y: 4.93}
+  m_Size: {x: 29.44547, y: 5.521604}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -728,8 +728,8 @@ Transform:
   m_GameObject: {fileID: 2099972998}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.7806, y: -2.38, z: 0}
-  m_LocalScale: {x: 6.544889, y: 1, z: 1}
+  m_LocalPosition: {x: 44.7671, y: -2.38, z: 0}
+  m_LocalScale: {x: 3.798127, y: 2.4360209, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2137568150}
@@ -1212,36 +1212,28 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 2099973004}
     m_ColliderPaths:
-    - - X: -245433344
-        Y: -17500000
-      - X: -965371200
-        Y: -17500000
-      - X: -965371200
-        Y: -27500000
-      - X: -245433344
-        Y: -27500000
-    - - X: 179984432
-        Y: -17500000
-      - X: -245433328
-        Y: -17500000
-      - X: -245433328
-        Y: -27500000
-      - X: 179984432
-        Y: -27500000
-    - - X: 278157760
-        Y: -17500000
-      - X: 179984448
-        Y: -17500000
-      - X: 179984448
-        Y: -27500000
-      - X: 278157760
-        Y: -27500000
+    - - X: -142429776
+        Y: -42630364
+      - X: -560223744
+        Y: -42630364
+      - X: -560223744
+        Y: -66990572
+      - X: -142429776
+        Y: -66990572
+    - - X: 161420400
+        Y: -42630364
+      - X: -142429760
+        Y: -42630364
+      - X: -142429760
+        Y: -66990572
+      - X: 161420400
+        Y: -66990572
   m_CompositePaths:
     m_Paths:
-    - - {x: 27.815748, y: -2.75}
-      - {x: 27.815748, y: -1.75}
-      - {x: -96.537125, y: -1.7500292}
-      - {x: -96.53709, y: -2.75}
+    - - {x: 16.142012, y: -6.699057}
+      - {x: 16.142012, y: -4.2630363}
+      - {x: -56.022373, y: -4.263066}
+      - {x: -56.022343, y: -6.699057}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
