@@ -1,22 +1,35 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
+
 public class PlayerController : MonoBehaviour
 {
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
+    public float airWalkSpeed = 3f;
+    public float jumpImpulse = 10f;
+    TouchingDirections touchingDirections;
 
     public float CurrentMoveSpeed{get{
-        if(IsMoving){
-            if(IsRunning){
-                return runSpeed;
-            }
-            else{
-                return walkSpeed;
+        if(!IsMoving){
+            return 0;
+        }
+        if(touchingDirections.IsGrounded){
+            if(IsMoving){
+                if(IsRunning){
+                    return runSpeed;
+                    }
+                else{
+                    return walkSpeed;
+                }
             }
         }
         else{
-            return 0;}
+            return airWalkSpeed;
+        }
+
+        return 0;
     }}
     
     Vector2 moveInput;
@@ -63,6 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        touchingDirections = GetComponent<TouchingDirections>();
     }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -79,7 +93,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //move
         rb.linearVelocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.linearVelocity.y);
+
+        animator.SetFloat("yVelocity", rb.linearVelocity.y); 
+
+        
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -98,6 +117,7 @@ public class PlayerController : MonoBehaviour
         else if(moveInput.x < 0 && IsFacingRight){
             IsFacingRight = false;
         }
+
     }
 
     public void OnRun(InputAction.CallbackContext context){
@@ -108,4 +128,12 @@ public class PlayerController : MonoBehaviour
             IsRunning = false;
         }
     }
+
+    public void OnJump(InputAction.CallbackContext context){
+        if(context.started && touchingDirections.IsGrounded){
+            animator.SetTrigger("jump");
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse);
+        }
+    }
+    
 }

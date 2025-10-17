@@ -728,8 +728,8 @@ Transform:
   m_GameObject: {fileID: 2099972998}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.7671, y: -2.38, z: 0}
-  m_LocalScale: {x: 3.798127, y: 2.4360209, z: 1}
+  m_LocalPosition: {x: 44.7671, y: 2.8567, z: 0}
+  m_LocalScale: {x: 3.798127, y: 4.0011244, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2137568150}
@@ -1213,27 +1213,27 @@ CompositeCollider2D:
   - m_Collider: {fileID: 2099973004}
     m_ColliderPaths:
     - - X: -142429776
-        Y: -42630364
+        Y: -70019680
       - X: -560223744
-        Y: -42630364
+        Y: -70019680
       - X: -560223744
-        Y: -66990572
+        Y: -110030920
       - X: -142429776
-        Y: -66990572
+        Y: -110030920
     - - X: 161420400
-        Y: -42630364
+        Y: -70019680
       - X: -142429760
-        Y: -42630364
+        Y: -70019680
       - X: -142429760
-        Y: -66990572
+        Y: -110030920
       - X: 161420400
-        Y: -66990572
+        Y: -110030920
   m_CompositePaths:
     m_Paths:
-    - - {x: 16.142012, y: -6.699057}
-      - {x: 16.142012, y: -4.2630363}
-      - {x: -56.022373, y: -4.263066}
-      - {x: -56.022343, y: -6.699057}
+    - - {x: 16.142012, y: -11.003092}
+      - {x: 16.142012, y: -7.001968}
+      - {x: -56.022373, y: -7.0019975}
+      - {x: -56.022343, y: -11.003092}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
