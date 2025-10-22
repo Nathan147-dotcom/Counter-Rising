@@ -8,18 +8,25 @@ public class FixedEnemyJumper : MonoBehaviour
     public float jumpCooldown;
     public float jumpImpulse;
     float lastJumpTime;
-    private bool isGrounded;
+    //private bool isGrounded;
+    private Rigidbody2D rb;
+    EnemyTouchingDirections touchingDirections;
 
-    [Header("Ground Check")]
+    /*[Header("Ground Check")]
     [SerializeField] private Transform groundCheck;   // empty child under the feet
     [SerializeField] private Vector2 groundBoxSize = new Vector2(0.8f, 0.1f);
-    [SerializeField] private LayerMask groundLayer = ~0; // set to your Ground layer
+    [SerializeField] private LayerMask groundLayer = ~0; // set to your Ground layer*/
+
+    void Awake(){
+        rb = GetComponent<Rigidbody2D>();
+        touchingDirections = GetComponent<EnemyTouchingDirections>();
+    }
 
 
     // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBoxSize, 0f, groundLayer);
+        //isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBoxSize, 0f, groundLayer);
         float dist = Vector2.Distance(player.transform.position, transform.position);
         Vector3 scale = transform.localScale;
 
@@ -33,9 +40,9 @@ public class FixedEnemyJumper : MonoBehaviour
 
         transform.localScale = scale;
         
-        Debug.Log("isGrounded = " + isGrounded);
+        //Debug.Log("isGrounded = " + isGrounded);
 
-        if ( isGrounded && Time.time > lastJumpTime + jumpCooldown) {
+        if ( touchingDirections.IsGrounded && Time.time > lastJumpTime + jumpCooldown) {
 
                 lastJumpTime = Time.time;
 
@@ -44,7 +51,7 @@ public class FixedEnemyJumper : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    /*private void OnDrawGizmosSelected()
     {
         if (groundCheck != null)
         {
@@ -53,5 +60,5 @@ public class FixedEnemyJumper : MonoBehaviour
         }
         Gizmos.color = new Color(0f, 0.5f, 1f, 0.15f);
         Gizmos.DrawWireSphere(transform.position, detectRadiusRange);
-    }
+    }*/
 }
