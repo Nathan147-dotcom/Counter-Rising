@@ -1075,7 +1075,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d2decaf94cfbf469d99123cb2d46e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  enemyDamage: 1
+  enemyDamage: 4
+  damageDelay: 1
 --- !u!61 &1615025162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1168,6 +1169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
   enemyDamage: 6
+  damageDelay: 1
 --- !u!61 &1748103820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1260,6 +1262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
   enemyDamage: 2
+  damageDelay: 1
 --- !u!61 &2003381917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2218,7 +2221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6702979001509703387, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
       propertyPath: health
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8988639386905192957, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
       propertyPath: airWalkSpeed
