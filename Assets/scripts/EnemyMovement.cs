@@ -7,6 +7,12 @@ public class enemies : MonoBehaviour
     public float speed;
     public float detectRadiusRange;
 
+    void Awake(){
+        if(player == null){
+            player = GameObject.FindWithTag("Player");
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

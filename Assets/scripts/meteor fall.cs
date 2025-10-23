@@ -9,18 +9,23 @@ public class meteorfall : MonoBehaviour {
 public GameObject meteor;
 
  // Speed at which the AppleTree moves
- public float speed = 1f;
+ public float speed = 3;
 
  // Distance where AppleTree turns around
- public float leftAndRightEdge = 10f;
+ private float leftEdge;
+ private float rightEdge;
 
  // Chance that the AppleTree will change directions
- public float changeDirChance = 0.1f;
+ public float changeDirChance = 0.7f;
+
+ public float edge = 5;
 
  // Seconds between Apples instantiations
  public float meteorDropDelay = 1f;
 
  void Start () {
+   leftEdge = transform.position.x - edge;
+   rightEdge = transform.position.x + edge;
  // Start dropping apples
  Invoke( "DropMeteor", 2f ); 
  }
@@ -39,10 +44,10 @@ public GameObject meteor;
     transform.position = pos;
 
  // Changing Direction
-    if ( pos.x < -leftAndRightEdge ) {
+    if ( pos.x < leftEdge ) {
     speed = Mathf.Abs( speed );//Move right
     }
-   else if ( pos.x > leftAndRightEdge ) {
+   else if ( pos.x > rightEdge ) {
     speed = -Mathf.Abs( speed );//Move left
    }
    /*else if ( Random.value < changeDirChance ) {
