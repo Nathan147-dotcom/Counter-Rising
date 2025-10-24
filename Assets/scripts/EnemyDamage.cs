@@ -12,6 +12,7 @@ public class EnemyDamage : MonoBehaviour
             if(Time.time > lastDamageTime + damageDelay){
             other.gameObject.GetComponent<PlayerHealth>().damagePlayer(enemyDamage);
             lastDamageTime = Time.time;
+            Destroy(gameObject);
             }
         }
     }
