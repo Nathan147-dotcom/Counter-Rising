@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::meteorfall
   meteor: {fileID: 8574336343752080686, guid: e858a233bb2f60c4394b9b1564135023, type: 3}
-  speed: 4
+  speed: 2
   changeDirChance: 0.1
   edge: 30
   meteorDropDelay: 1
