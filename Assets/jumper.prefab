@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d2decaf94cfbf469d99123cb2d46e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  enemyDamage: 5
+  enemyDamage: 9
   damageDelay: 1
 --- !u!61 &8638725658998207751
 BoxCollider2D:
@@ -202,7 +202,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -320,7 +320,7 @@ MonoBehaviour:
   speed: 4
   detectRadiusRange: 13
   jumpCooldown: 0.3
-  jumpImpulse: 11
+  jumpImpulse: 400
 --- !u!70 &8041522123033519228
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
