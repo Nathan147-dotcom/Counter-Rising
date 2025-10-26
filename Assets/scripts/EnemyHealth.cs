@@ -7,6 +7,11 @@ public class EnemyHealth : MonoBehaviour
 {
     public int health; 
     private int currentHealth;
+    AudioManager audioManager;
+
+    private void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +23,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if(currentHealth <= 0){
             Destroy(gameObject);
+            audioManager.PlaySFX(audioManager.enemyDeath);
         }
     }
 

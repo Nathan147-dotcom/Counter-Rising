@@ -13,10 +13,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     private Animator playerAnim;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    AudioManager audioManager;
+
+    private void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -29,6 +29,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             if (shotCounter<=0){
                 shotCounter = fireRate;
                 Shoot();
+                audioManager.PlaySFX(audioManager.shoot);
             }
         }
         else{

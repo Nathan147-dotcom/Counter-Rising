@@ -8,7 +8,6 @@ public class AudioManager : MonoBehaviour
 
     [Header("Audio Source")]
     public AudioClip background;
-    public AudioClip walk;
     public AudioClip shoot;
     public AudioClip lazerShoot;
     public AudioClip enemyDeath;
@@ -16,5 +15,9 @@ public class AudioManager : MonoBehaviour
     private void Start(){
         musicSource.clip = background;
         musicSource.Play();
+    }
+
+    public void PlaySFX(AudioClip clip){
+        SFXSource.PlayOneShot(clip);
     }
 }

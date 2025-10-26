@@ -108,8 +108,8 @@ MonoBehaviour:
   firePoint: {fileID: 4730446944564152777}
   ammoType: {fileID: 5720145455137412351, guid: 72e0771210ca49d4480be7ea6d7772c7, type: 3}
   shotSpeed: 20
-  shotCounter: 0
-  fireRate: 3
+  shotCounter: 5
+  fireRate: 8
 --- !u!114 &3455121461827755128
 MonoBehaviour:
   m_ObjectHideFlags: 0

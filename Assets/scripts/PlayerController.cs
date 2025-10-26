@@ -40,9 +40,10 @@ public class PlayerController : MonoBehaviour
         return _isMoving;
     } private set{
         _isMoving = value;
-        animator.SetBool("isMoving", value);
+        animator.SetBool("isMoving", value);        
 
     } }
+
     [SerializeField]
     private bool _isRunning = false;
 
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviour
         {
             _isRunning = value;
             animator.SetBool("isRunning", value);
+            
         }
     }
 

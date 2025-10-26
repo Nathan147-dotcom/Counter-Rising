@@ -7,7 +7,7 @@ public class EnemyShoot : MonoBehaviour
     public GameObject ammoType;
     private float timer;
     private GameObject player;
-    
+    AudioManager audioManager;
 
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
@@ -23,6 +23,7 @@ public class EnemyShoot : MonoBehaviour
                 timer = 0;
                 timer += Time.deltaTime;
                 Shoot();
+                audioManager.PlaySFX(audioManager.lazerShoot);
             }
         }
         
@@ -31,6 +32,10 @@ public class EnemyShoot : MonoBehaviour
     void Shoot()
     {
         Instantiate(ammoType, firePoint.position, Quaternion.identity);
+    }
+
+    private void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
 
