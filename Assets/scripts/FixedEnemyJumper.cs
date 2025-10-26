@@ -8,6 +8,7 @@ public class FixedEnemyJumper : MonoBehaviour
     public float jumpCooldown;
     public float jumpImpulse;
     float lastJumpTime;
+    private Animator animator;
     //private bool isGrounded;
     private Rigidbody2D rb;
     EnemyTouchingDirections touchingDirections;
@@ -18,6 +19,7 @@ public class FixedEnemyJumper : MonoBehaviour
     [SerializeField] private LayerMask groundLayer = ~0; // set to your Ground layer*/
 
     void Awake(){
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<EnemyTouchingDirections>();
     }
@@ -29,7 +31,7 @@ public class FixedEnemyJumper : MonoBehaviour
         //isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBoxSize, 0f, groundLayer);
         float dist = Vector2.Distance(player.transform.position, transform.position);
         Vector3 scale = transform.localScale;
-
+        animator.SetBool("grounded", touchingDirections.IsGrounded);
         if(dist < detectRadiusRange){
         if(player.transform.position.x > transform.position.x){
             transform.Translate(speed * Time.deltaTime, 0, 0);
@@ -45,8 +47,8 @@ public class FixedEnemyJumper : MonoBehaviour
         if ( touchingDirections.IsGrounded && Time.time > lastJumpTime + jumpCooldown) {
 
                 lastJumpTime = Time.time;
-
                 GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpImpulse, ForceMode2D.Impulse);
+                animator.SetBool("grounded", touchingDirections.IsGrounded);
         }
         }
     }
