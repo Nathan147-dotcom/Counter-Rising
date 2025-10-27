@@ -318,9 +318,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FixedEnemyJumper
   player: {fileID: 4819595178129201046, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
   speed: 4
-  detectRadiusRange: 13
+  detectRadiusRange: 20
   jumpCooldown: 0.3
-  jumpImpulse: 400
+  jumpImpulse: 460
 --- !u!70 &8041522123033519228
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -40771,8 +40771,8 @@ MonoBehaviour:
   musicSource: {fileID: 1244817692}
   SFXSource: {fileID: 1918374546}
   background: {fileID: 8300000, guid: 1f2ad53bacc245642854dbdc8ea71a9b, type: 3}
-  walk: {fileID: 8300000, guid: 31be579b280d0bc459635877e8c45aee, type: 3}
-  shoot: {fileID: 8300000, guid: 8401456349c492a489ed90469e317e43, type: 3}
+  shoot: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
+  canon: {fileID: 8300000, guid: 8401456349c492a489ed90469e317e43, type: 3}
   lazerShoot: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
   enemyDeath: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!4 &1764757510

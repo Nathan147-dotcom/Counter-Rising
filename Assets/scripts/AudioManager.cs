@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Source")]
     public AudioClip background;
     public AudioClip shoot;
+    public AudioClip canon;
     public AudioClip lazerShoot;
     public AudioClip enemyDeath;
 
