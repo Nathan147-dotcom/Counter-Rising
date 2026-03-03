@@ -1,6 +1,7 @@
 using UnityEngine;
+using Unity.Netcode;
 
-public class FixedEnemyJumper : MonoBehaviour
+public class FixedEnemyJumper : NetworkBehaviour
 {
     public GameObject player;
     public float speed;
@@ -28,6 +29,14 @@ public class FixedEnemyJumper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!IsServer){
+            return;
+        }
+        if (player == null){
+            player = GameObject.FindWithTag("Player");
+            return;
+            }
+
         //isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBoxSize, 0f, groundLayer);
         float dist = Vector2.Distance(player.transform.position, transform.position);
         Vector3 scale = transform.localScale;
