@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 3754232712077699678, guid: 66e17a0caffbb6c489588720ac348ff1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 8554257497576947041, guid: 66e17a0caffbb6c489588720ac348ff1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 270.0542
@@ -291,7 +291,7 @@ PrefabInstance:
     - target: {fileID: 3907070320411060359, guid: dba2996d09a9d914c9cd824d4ec0aa16, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 4988253161274749904, guid: dba2996d09a9d914c9cd824d4ec0aa16, type: 3}
       propertyPath: m_Name
       value: jumper-idle-1 (1)
@@ -382,7 +382,7 @@ PrefabInstance:
     - target: {fileID: 3928512586878781579, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 5706199441224574551, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
       propertyPath: m_Name
       value: skeleton-idle1 (3)
@@ -439,7 +439,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 7083239421767775269, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_Name
       value: Crab (1)
@@ -799,7 +799,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 7083239421767775269, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_Name
       value: Crab (6)
@@ -39167,7 +39167,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 7083239421767775269, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_Name
       value: Crab (3)
@@ -39554,7 +39554,7 @@ PrefabInstance:
     - target: {fileID: 3907070320411060359, guid: dba2996d09a9d914c9cd824d4ec0aa16, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 4988253161274749904, guid: dba2996d09a9d914c9cd824d4ec0aa16, type: 3}
       propertyPath: m_Name
       value: jumper-idle-1
@@ -39645,7 +39645,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 883242129}
-    PlayerPrefab: {fileID: 4819595178129201046, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
+    PlayerPrefab: {fileID: 8300750025553067941, guid: 414c0c2623dda4648930691bc3654017, type: 3}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 24e543d280f68a9408212654f3d6fac4, type: 2}
@@ -39749,37 +39749,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &969625578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 969625579}
-  m_Layer: 0
-  m_Name: Weapon Slot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &969625579
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969625578}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 0.67, z: 0}
-  m_LocalScale: {x: 0.9627404, y: 0.6437209, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1752866008}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999461350
 GameObject:
@@ -39976,7 +39945,7 @@ PrefabInstance:
     - target: {fileID: 3754232712077699678, guid: 66e17a0caffbb6c489588720ac348ff1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 6502136860127831799, guid: 66e17a0caffbb6c489588720ac348ff1, type: 3}
       propertyPath: enemyDamage
       value: 9
@@ -40080,7 +40049,7 @@ PrefabInstance:
     - target: {fileID: 3907070320411060359, guid: dba2996d09a9d914c9cd824d4ec0aa16, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 4988253161274749904, guid: dba2996d09a9d914c9cd824d4ec0aa16, type: 3}
       propertyPath: m_Name
       value: jumper-idle-1 (2)
@@ -40152,7 +40121,7 @@ PrefabInstance:
     - target: {fileID: 3928512586878781579, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 5706199441224574551, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
       propertyPath: m_Name
       value: skeleton-idle1
@@ -40203,7 +40172,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 7083239421767775269, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_Name
       value: Crab (7)
@@ -40935,7 +40904,7 @@ PrefabInstance:
     - target: {fileID: 3928512586878781579, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 5706199441224574551, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
       propertyPath: m_Name
       value: skeleton-idle1 (1)
@@ -40948,117 +40917,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 487380573}
   m_SourcePrefab: {fileID: 100100000, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
---- !u!1001 &1533572377
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2192172885122345376, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2192172885122345376, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4819595178129201046, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -11.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6074474552756739324, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6074474552756739324, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: m_TagString
-      value: Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 6702979001509703387, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: health
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 6702979001509703387, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1326604582}
-    - target: {fileID: 6702979001509703387, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: healthbar
-      value: 
-      objectReference: {fileID: 1326604582}
-    - target: {fileID: 7421314089044278197, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: GlobalObjectIdHash
-      value: 2098199008
-      objectReference: {fileID: 0}
-    - target: {fileID: 7421314089044278197, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: SceneMigrationSynchronization
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7421314089044278197, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: InScenePlacedSourceGlobalObjectIdHash
-      value: 2952992384
-      objectReference: {fileID: 0}
-    - target: {fileID: 8988639386905192957, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: jumpImpulse
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8988639386905192957, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      propertyPath: airWalkSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 969625579}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4819595178129201046, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1752866017}
-  m_SourcePrefab: {fileID: 100100000, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
 --- !u!1001 &1605472417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41070,7 +40928,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 7083239421767775269, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_Name
       value: Crab (2)
@@ -41206,7 +41064,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 7083239421767775269, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_Name
       value: Crab (4)
@@ -41357,7 +41215,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 7083239421767775269, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_Name
       value: Crab (5)
@@ -41407,30 +41265,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
---- !u!1 &1752865999 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4819595178129201046, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-  m_PrefabInstance: {fileID: 1533572377}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1752866008 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5208745931456175837, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
-  m_PrefabInstance: {fileID: 1533572377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1752866017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752865999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fd873233e594824a964d998db8fa41f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponSwap
-  weaponSlot: {fileID: 969625579}
-  currentWeapon: {fileID: 4144493561317273720, guid: 7d55de2913ee17c4abe3d61c8496df8f, type: 3}
 --- !u!1 &1764757506
 GameObject:
   m_ObjectHideFlags: 0
@@ -41984,7 +41818,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 1752866008}
+    TrackingTarget: {fileID: 0}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
@@ -42073,7 +41907,7 @@ PrefabInstance:
     - target: {fileID: 3928512586878781579, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 5706199441224574551, guid: 1e25ac1765a81cd4ebf1325862af602a, type: 3}
       propertyPath: m_Name
       value: skeleton-idle1 (2)
@@ -42154,7 +41988,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752865999}
+      objectReference: {fileID: 0}
     - target: {fileID: 3366728360456175510, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -42225,7 +42059,6 @@ SceneRoots:
   - {fileID: 319535853}
   - {fileID: 751465933}
   - {fileID: 2220932165821409962}
-  - {fileID: 1533572377}
   - {fileID: 1985413394}
   - {fileID: 1171593870}
   - {fileID: 1515076895}
