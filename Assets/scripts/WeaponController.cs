@@ -22,7 +22,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gunRotate();
+        #if UNITY_EDITOR
+            HandleMouseInput();
+        #endif
+        
+    }
+
+    void HandleMouseInput(){
+        RotateTowardScreenPoint(Input.mousePosition);
 
         if(Input.GetMouseButton(0)){
             shotCounter -= Time.deltaTime;
@@ -37,17 +44,32 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
     }
 
-    void gunRotate(){
-        Vector3 mousePos = Input.mousePosition;
+    public void HandleTouchInput(Touch touch){
+        RotateTowardScreenPoint(touch.position);
+        if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved){
+            shotCounter -= Time.deltaTime;
+            if (shotCounter <= 0){
+                shotCounter = fireRate;
+                Shoot();
+                audioManager.PlaySFX(audioManager.shoot);
+            }
+        }
+        else if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled){
+                shotCounter = 0;
+            }
+    }
+
+    void RotateTowardScreenPoint(Vector2 screenPoint){
+        Vector2 originalPoint = screenPoint;
         Vector3 gunPos = Camera.main.WorldToScreenPoint(transform.position);
-        mousePos.x = mousePos.x - gunPos.x;
-        mousePos.y = mousePos.y - gunPos.y;
-        float gunAngle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-        if(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x){
-            transform.rotation=Quaternion.Euler(new Vector3(180f, 0f, -gunAngle));
+        screenPoint.x = screenPoint.x - gunPos.x;
+        screenPoint.y = screenPoint.y - gunPos.y;
+        float gunAngle = Mathf.Atan2(screenPoint.y, screenPoint.x) * Mathf.Rad2Deg;
+        if(Camera.main.ScreenToWorldPoint(originalPoint).x < transform.position.x){
+            transform.rotation = Quaternion.Euler(180f, 0f, -gunAngle);
             }
         else{
-            transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, gunAngle));        
+            transform.rotation = Quaternion.Euler(0f, 0f, gunAngle);   
             }
     }
     //Prefab

@@ -137,5 +137,19 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse);
         }
     }
+
+    public void OnMoveMobile(Vector2 input){
+        moveInput = input;
+        IsMoving = input != Vector2.zero;
+        SetFacingDirection(input);
+    }
     
+    public void JumpMobile()
+    {
+    if (touchingDirections.IsGrounded)
+    {
+        animator.SetTrigger("jump");
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpImpulse);
+    }
+    }
 }
