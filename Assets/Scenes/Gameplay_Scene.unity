@@ -852,7 +852,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.127954, y: -1.2786627, z: -10}
+  m_LocalPosition: {x: 25.305016, y: -1.2786627, z: -10}
   m_LocalScale: {x: 1.0061207, y: 0.9848689, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39661,12 +39661,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 727319363711601558, guid: 414c0c2623dda4648930691bc3654017, type: 3}
   m_PrefabInstance: {fileID: 787390870}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 787390872}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8ac271ddde3c4640903a62f5c116610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!1 &787390872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8300750025553067941, guid: 414c0c2623dda4648930691bc3654017, type: 3}
+  m_PrefabInstance: {fileID: 787390870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &814063437
 GameObject:
   m_ObjectHideFlags: 0
@@ -41280,7 +41285,7 @@ PrefabInstance:
     - target: {fileID: 3154176454636249074, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 787390872}
     - target: {fileID: 7083239421767775269, guid: 659d8883ef51c9644a0843dac00eb5e1, type: 3}
       propertyPath: m_Name
       value: Crab (4)
@@ -42250,7 +42255,7 @@ Transform:
   m_GameObject: {fileID: 1985413390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.127954, y: -1.2786627, z: -10}
+  m_LocalPosition: {x: 25.305016, y: -1.2786627, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

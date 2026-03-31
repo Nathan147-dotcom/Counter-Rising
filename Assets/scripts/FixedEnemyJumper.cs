@@ -1,7 +1,7 @@
 using UnityEngine;
 using Unity.Netcode;
 
-public class FixedEnemyJumper : NetworkBehaviour
+public class FixedEnemyJumper : MonoBehaviour
 {
     public GameObject player;
     public float speed;
@@ -29,9 +29,7 @@ public class FixedEnemyJumper : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsServer){
-            return;
-        }
+        
         if (player == null){
             player = GameObject.FindWithTag("Player");
             return;

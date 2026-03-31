@@ -242,7 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01f6b03ce65dfb41a15f67eee93236a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FixedEnemyJumper
-  player: {fileID: 4819595178129201046, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
+  ShowTopMostFoldoutHeaderGroup: 1
+  player: {fileID: 8300750025553067941, guid: 414c0c2623dda4648930691bc3654017, type: 3}
   speed: 5
   detectRadiusRange: 20
   jumpCooldown: 0.3

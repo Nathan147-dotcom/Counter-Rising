@@ -48,8 +48,6 @@ GameObject:
   - component: {fileID: 5635122227906333576}
   - component: {fileID: 3416016511471218373}
   - component: {fileID: 5237705780736920765}
-  - component: {fileID: 6689144470883318381}
-  - component: {fileID: 7976370119479597907}
   - component: {fileID: 601238287827092413}
   m_Layer: 0
   m_Name: Player 1
@@ -425,44 +423,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   health: 200
   healthBar: {fileID: 0}
---- !u!114 &6689144470883318381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8300750025553067941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 2098199008
-  InScenePlacedSourceGlobalObjectIdHash: 2952992384
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 0
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
---- !u!114 &7976370119479597907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8300750025553067941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 254bf84b7661da244be46023886de2cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RpcTest
-  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!114 &601238287827092413
 MonoBehaviour:
   m_ObjectHideFlags: 0

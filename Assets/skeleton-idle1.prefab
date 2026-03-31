@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6470f8e610e09d4fa0d349c58fed24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemies
-  player: {fileID: 4819595178129201046, guid: deee91c9d8c4b8d4098822c9973b024a, type: 3}
+  player: {fileID: 8300750025553067941, guid: 414c0c2623dda4648930691bc3654017, type: 3}
   flip: 1
   speed: 4
   detectRadiusRange: 15
